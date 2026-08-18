@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import Home from './pages/Home';
 
 const Placeholder = ({ title }: { title: string }) => (
   <div className="mx-auto max-w-7xl px-4 py-24 md:px-6">
@@ -15,7 +16,7 @@ export default function App() {
       <Navbar />
       <main className="flex-1">
         <Routes>
-          <Route path="/" element={<Placeholder title="Home" />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<Placeholder title="About" />} />
           <Route path="/services" element={<Placeholder title="Services" />} />
           <Route path="/contact" element={<Placeholder title="Contact" />} />
