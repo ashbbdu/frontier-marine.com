@@ -7,6 +7,8 @@ import {
 import SectionHeading from '../components/SectionHeading';
 import ServiceCard from '../components/ServiceCard';
 import HeroSlider from '../components/HeroSlider';
+import TestimonialsMarquee from '../components/TestimonialsMarquee';
+import Faq from '../components/Faq';
 import { site, whatsappHref } from '../config/site';
 
 const heroImages = [
@@ -127,6 +129,24 @@ export default function Home() {
           </div>
         </div>
       </section> */}
+
+      {/* Testimonials */}
+      <section className="bg-slate-50 dark:bg-slate-900">
+        <div className="mx-auto max-w-7xl px-4 py-20 md:px-6">
+          <SectionHeading kicker="What clients say" title="Shipping teams that trust us with their cargo" subtitle="Real feedback from importers, exporters, and manufacturers across the GCC and beyond." />
+          <div className="mt-12">
+            <TestimonialsMarquee />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="mx-auto max-w-7xl px-4 py-20 md:px-6">
+        <SectionHeading kicker="Frequently asked" title="Questions we hear a lot" subtitle="If you don't see your question below, message us on WhatsApp — we usually reply the same hour." />
+        <div className="mt-12">
+          <Faq />
+        </div>
+      </section>
 
       {/* Contact CTA */}
       <section className="mx-auto max-w-7xl px-4 py-20 md:px-6">
