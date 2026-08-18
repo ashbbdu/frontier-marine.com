@@ -32,7 +32,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt={`${site.name} — ${site.tagline}`}
-            className="h-14 w-auto md:h-16 dark:brightness-0 dark:invert"
+            className="h-10 w-auto dark:brightness-0 dark:invert"
           />
         </Link>
 
@@ -94,7 +94,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt={`${site.name} — ${site.tagline}`}
-            className="h-12 w-auto dark:brightness-0 dark:invert"
+            className="h-10 w-auto dark:brightness-0 dark:invert"
           />
           <button
             type="button"
