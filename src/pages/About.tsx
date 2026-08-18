@@ -30,9 +30,10 @@ export default function About() {
           <SectionHeading align="left" kicker="Our story" title="Built on cargo, run on trust" />
           <div className="mt-6 space-y-4 text-slate-600 dark:text-slate-300">
             <p>
-              What started as a small brokerage in a single port city has grown into a global forwarding
-              partner spanning 50+ countries. Along the way, one thing hasn't changed: our belief that
-              every shipment is a promise.
+              What started as a small brokerage in Dubai has grown into a global forwarding partner
+              spanning 50+ countries — with Jebel Ali as our anchor and the UAE's trade corridors as
+              our launchpad. Along the way, one thing hasn't changed: our belief that every shipment
+              is a promise.
             </p>
             <p>
               Today, we handle ocean, air, and land freight for growing brands, established manufacturers,

@@ -17,16 +17,12 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src="/logo.png" alt={`${site.name} logo`} className="h-9 w-auto" />
-          <span className="hidden sm:flex flex-col leading-tight">
-            <span className="text-sm font-bold tracking-wide text-brand-navy dark:text-white">
-              {site.name.toUpperCase()}
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-brand-royal">
-              {site.tagline}
-            </span>
-          </span>
+        <Link to="/" className="flex items-center" onClick={() => setOpen(false)} aria-label={`${site.name} home`}>
+          <img
+            src="/logo.png"
+            alt={`${site.name} — ${site.tagline}`}
+            className="h-12 w-auto md:h-14 dark:brightness-0 dark:invert"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">

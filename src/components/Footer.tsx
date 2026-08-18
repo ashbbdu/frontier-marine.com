@@ -7,16 +7,12 @@ export default function Footer() {
     <footer className="border-t border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-4 md:px-6">
         <div className="space-y-3">
-          <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="" className="h-9 w-auto" />
-            <div className="flex flex-col leading-tight">
-              <span className="text-sm font-bold text-brand-navy dark:text-white">
-                {site.name.toUpperCase()}
-              </span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-brand-royal">
-                {site.tagline}
-              </span>
-            </div>
+          <div className="flex items-center">
+            <img
+              src="/logo.png"
+              alt={`${site.name} — ${site.tagline}`}
+              className="h-12 w-auto dark:brightness-0 dark:invert"
+            />
           </div>
           <p className="text-sm text-slate-600 dark:text-slate-400">
             Moving cargo across oceans, skies, and continents — with the reliability your business
