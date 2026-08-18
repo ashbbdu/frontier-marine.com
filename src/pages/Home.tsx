@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import {
   Ship, Plane, Truck, FileCheck2,
   Anchor, Globe2, ShieldCheck, Clock,
-  ArrowRight, MessageCircle, MapPin,
+  ArrowRight, MessageCircle,
 } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
 import ServiceCard from '../components/ServiceCard';
