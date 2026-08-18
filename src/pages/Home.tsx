@@ -6,7 +6,6 @@ import {
 } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
 import ServiceCard from '../components/ServiceCard';
-import Tracker from '../components/Tracker';
 import HeroSlider from '../components/HeroSlider';
 import { site, whatsappHref } from '../config/site';
 
