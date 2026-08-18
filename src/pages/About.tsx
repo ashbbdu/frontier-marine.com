@@ -126,16 +126,22 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <SectionHeading kicker="What clients say" title="Shipping teams that trust us with their cargo" subtitle="Real feedback from importers, exporters, and manufacturers across the GCC and beyond." />
-        </div>
+      <section className="mx-auto max-w-7xl px-4 py-20 md:px-6">
+        <SectionHeading kicker="What clients say" title="Shipping teams that trust us with their cargo" subtitle="Real feedback from importers, exporters, and manufacturers across the GCC and beyond." />
 
         <div
           className="group relative mt-12 overflow-hidden"
           aria-label="Client testimonials"
         >
-          <div className="flex w-max gap-6 pl-6 animate-marquee group-hover:[animation-play-state:paused]">
+          <div
+            className="flex w-max gap-6"
+            style={{
+              animation: 'marquee 25s linear infinite',
+              willChange: 'transform',
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.animationPlayState = 'paused')}
+            onMouseLeave={(e) => (e.currentTarget.style.animationPlayState = 'running')}
+          >
             {[...testimonials, ...testimonials].map((t, i) => (
               <figure
                 key={`${t.name}-${i}`}
