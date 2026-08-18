@@ -30,6 +30,34 @@ const testimonials = [
     role: 'Founder',
     company: 'Souq Provisions',
   },
+  {
+    quote:
+      "Their GCC road network is exactly what we needed for cross-border deliveries into Saudi. On-time percentage jumped noticeably in the first month, and I have visibility I never had before.",
+    name: 'Faisal Ibrahim',
+    role: 'Logistics Director',
+    company: 'Levant Trading Co.',
+  },
+  {
+    quote:
+      "As a fashion importer, our SKUs come from a dozen origins on tight windows. Frontier consolidates it all beautifully and their LCL rates keep our unit economics honest.",
+    name: 'Anna Kovacs',
+    role: 'Head of Buying',
+    company: 'Kite & Co. Apparel',
+  },
+  {
+    quote:
+      "We ship spare parts around the clock — sometimes at 2am. Their ops team responds fast, files clean, and treats every consignment like it's their own. That's rare.",
+    name: 'Devang Shah',
+    role: 'COO',
+    company: 'Precision Auto Parts',
+  },
+  {
+    quote:
+      "Bulk construction materials into Abu Dhabi used to be a paperwork nightmare. Frontier's brokerage and bonded warehousing turned it into something I barely think about now.",
+    name: 'Mohammed Al-Farsi',
+    role: 'Procurement Manager',
+    company: 'Al Waha Construction',
+  },
 ];
 
 export default function About() {
@@ -98,36 +126,49 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-20 md:px-6">
-        <SectionHeading kicker="What clients say" title="Shipping teams that trust us with their cargo" subtitle="Real feedback from importers, exporters, and manufacturers across the GCC and beyond." />
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {testimonials.map((t) => (
-            <figure
-              key={t.name}
-              className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900"
-            >
-              <Quote size={28} className="text-brand-royal/60" aria-hidden="true" />
-              <div className="mt-3 flex gap-0.5" aria-label="5 out of 5 stars">
-                {[0, 1, 2, 3, 4].map((i) => (
-                  <Star key={i} size={16} className="fill-brand-royal text-brand-royal" />
-                ))}
-              </div>
-              <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
-                "{t.quote}"
-              </blockquote>
-              <figcaption className="mt-6 flex items-center gap-3 border-t border-slate-200 pt-4 dark:border-slate-800">
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-brand-navy to-brand-royal text-sm font-semibold text-white">
-                  {t.name.split(' ').map((n) => n[0]).join('').slice(0, 2)}
+      <section className="py-20">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <SectionHeading kicker="What clients say" title="Shipping teams that trust us with their cargo" subtitle="Real feedback from importers, exporters, and manufacturers across the GCC and beyond." />
+        </div>
+
+        <div
+          className="group relative mt-12 overflow-hidden"
+          aria-label="Client testimonials"
+        >
+          <div className="flex w-max gap-6 pl-6 animate-marquee group-hover:[animation-play-state:paused]">
+            {[...testimonials, ...testimonials].map((t, i) => (
+              <figure
+                key={`${t.name}-${i}`}
+                className="flex w-[85vw] max-w-sm shrink-0 flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+                aria-hidden={i >= testimonials.length}
+              >
+                <Quote size={28} className="text-brand-royal/60" aria-hidden="true" />
+                <div className="mt-3 flex gap-0.5" aria-label="5 out of 5 stars">
+                  {[0, 1, 2, 3, 4].map((s) => (
+                    <Star key={s} size={16} className="fill-brand-royal text-brand-royal" />
+                  ))}
                 </div>
-                <div>
-                  <div className="text-sm font-semibold text-slate-900 dark:text-white">{t.name}</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">
-                    {t.role} · {t.company}
+                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                  "{t.quote}"
+                </blockquote>
+                <figcaption className="mt-6 flex items-center gap-3 border-t border-slate-200 pt-4 dark:border-slate-800">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-brand-navy to-brand-royal text-sm font-semibold text-white">
+                    {t.name.split(' ').map((n) => n[0]).join('').slice(0, 2)}
                   </div>
-                </div>
-              </figcaption>
-            </figure>
-          ))}
+                  <div>
+                    <div className="text-sm font-semibold text-slate-900 dark:text-white">{t.name}</div>
+                    <div className="text-xs text-slate-500 dark:text-slate-400">
+                      {t.role} · {t.company}
+                    </div>
+                  </div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+
+          {/* Edge fades so cards ease in/out of view */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-white to-transparent dark:from-slate-950 md:w-24" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-white to-transparent dark:from-slate-950 md:w-24" />
         </div>
       </section>
     </>
