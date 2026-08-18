@@ -120,14 +120,14 @@ export default function Home() {
       </section>
 
       {/* Tracker */}
-      <section className="bg-slate-50 dark:bg-slate-900">
+      {/* <section className="bg-slate-50 dark:bg-slate-900">
         <div className="mx-auto max-w-4xl px-4 py-20 md:px-6">
           <SectionHeading kicker="Live status" title="Where's my cargo?" subtitle="Enter a tracking number to see a demo of our shipment timeline." />
           <div className="mt-10">
             <Tracker />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact CTA */}
       <section className="mx-auto max-w-7xl px-4 py-20 md:px-6">
