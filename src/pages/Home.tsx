@@ -46,9 +46,9 @@ export default function Home() {
         <HeroSlider images={heroImages} />
 
         <div className="relative z-10 mx-auto w-full max-w-5xl px-4 py-24 text-center md:px-6">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest backdrop-blur">
-            {/* <MapPin size={14} /> Headquartered in {site.city} */}
-          </div>
+          {/* <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest backdrop-blur">
+            <MapPin size={14} /> Headquartered in {site.city}
+          </div> */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow">
             Your cargo, <span className="text-brand-light">every ocean.</span>
           </h1>
