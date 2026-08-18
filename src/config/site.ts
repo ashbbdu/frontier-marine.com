@@ -5,7 +5,7 @@ export const site = {
   whatsappNumber: '971567614169',
   whatsappDefaultMessage:
     "Hi Frontier Maritime, I'd like to know more about your freight forwarding services.",
-  email: 'info@frontiermaritime.ae',
+  email: 'Joshua@frontier-marine.com',
   phone: '+971 4 000 0000',
   address: 'Jebel Ali Free Zone, Dubai, United Arab Emirates',
   social: {
