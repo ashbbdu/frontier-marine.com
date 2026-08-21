@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import {
-  Ship, Plane, Truck, FileCheck2,
+  Ship, Plane, Truck, Boxes,
   Anchor, Globe2, ShieldCheck, Clock,
   ArrowRight, MessageCircle,
 } from 'lucide-react';
@@ -23,7 +23,7 @@ const services = [
   { icon: Ship, title: 'Ocean Freight', description: 'FCL and LCL sea shipping from Jebel Ali and Khalifa Port to 200+ destinations worldwide.' },
   { icon: Plane, title: 'Air Freight', description: 'Express and standard air cargo through DXB and DWC when the calendar matters more than the invoice.' },
   { icon: Truck, title: 'Land Transport', description: 'GCC-wide trucking and last-mile road freight across the UAE, Saudi Arabia, Oman, and beyond.' },
-  { icon: FileCheck2, title: 'Customs & Warehousing', description: 'UAE customs brokerage, documentation, and bonded storage handled by a team that speaks the paperwork.' },
+  { icon: Boxes, title: 'Project Logistics', description: 'RoRo, break-bulk, and out-of-gauge cargo — vehicles, machinery, and project shipments that don’t fit a container.' },
 ];
 
 const stats = [

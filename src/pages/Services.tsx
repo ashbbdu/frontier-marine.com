@@ -1,4 +1,4 @@
-import { Ship, Plane, Truck, FileCheck2, Check, MessageCircle } from 'lucide-react';
+import { Ship, Plane, Truck, Boxes, Check, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { whatsappHref } from '../config/site';
 
@@ -6,6 +6,8 @@ const services = [
   {
     icon: Ship,
     title: 'Ocean Freight (FCL & LCL)',
+    image: 'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=1400&q=80&auto=format&fit=crop',
+    imageAlt: 'Container ship at sea loaded with stacks of shipping containers',
     description:
       'Full-container and less-than-container sea shipping to more than 200 ports worldwide, backed by vetted carrier partnerships and door-to-door coordination.',
     features: [
@@ -18,6 +20,8 @@ const services = [
   {
     icon: Plane,
     title: 'Air Freight',
+    image: 'https://images.unsplash.com/photo-1571086291540-b137111fa1c7?w=1400&q=80&auto=format&fit=crop',
+    imageAlt: 'Cargo aircraft at an international airport',
     description:
       'Express and standard air cargo when time is the priority — with capacity across leading carriers and cutoffs designed around your production calendar.',
     features: [
@@ -30,6 +34,8 @@ const services = [
   {
     icon: Truck,
     title: 'Land & Road Transport',
+    image: 'https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62?w=1400&q=80&auto=format&fit=crop',
+    imageAlt: 'Freight truck on a highway',
     description:
       'Cross-border trucking and last-mile delivery across major trade corridors, integrated cleanly with your ocean and air legs.',
     features: [
@@ -40,15 +46,17 @@ const services = [
     ],
   },
   {
-    icon: FileCheck2,
-    title: 'Customs Clearance & Warehousing',
+    icon: Boxes,
+    title: 'Project Logistics (RoRo / Break Bulk)',
+    image: 'https://images.unsplash.com/photo-1759354017705-8bd86407ca5e?w=1400&q=80&auto=format&fit=crop',
+    imageAlt: 'Roll-on/roll-off ship sailing on the ocean',
     description:
-      'Licensed brokerage, complete documentation, and bonded warehousing — so your goods clear cleanly and store safely between legs.',
+      'Oversized, wheeled, and out-of-gauge cargo handled end-to-end — from roll-on/roll-off vessels for vehicles and machinery to break-bulk stowage for project shipments that don’t fit a box.',
     features: [
-      'Import and export customs brokerage',
-      'HS classification and duty consulting',
-      'Bonded and general warehousing',
-      'Pick-pack, kitting, and fulfillment ready',
+      'RoRo capacity for cars, trucks, and heavy equipment',
+      'Break-bulk stowage for oversized and project cargo',
+      'Lift plans, lashing, and port handling coordination',
+      'Route surveys and permits for out-of-gauge moves',
     ],
   },
 ];
@@ -86,8 +94,13 @@ export default function Services() {
                 ))}
               </ul>
             </div>
-            <div className="rounded-3xl bg-gradient-to-br from-brand-navy/10 to-brand-royal/10 p-10 dark:from-brand-navy/30 dark:to-brand-royal/20 aspect-video flex items-center justify-center">
-              <s.icon size={96} className="text-brand-royal opacity-60" />
+            <div className="overflow-hidden rounded-3xl border border-slate-200 shadow-sm dark:border-slate-800 aspect-video">
+              <img
+                src={s.image}
+                alt={s.imageAlt}
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         ))}
