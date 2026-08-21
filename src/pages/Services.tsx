@@ -4,6 +4,20 @@ import { whatsappHref } from '../config/site';
 
 const services = [
   {
+    icon: Boxes,
+    title: 'Project Logistics (RoRo / Break Bulk)',
+    image: '/service-project-logistics.jpg',
+    imageAlt: 'Heavy oilfield equipment on trailers staged for shipment',
+    description:
+      'Oversized, wheeled, and out-of-gauge cargo handled end-to-end — from roll-on/roll-off vessels for vehicles and machinery to break-bulk stowage for project shipments that don’t fit a box.',
+    features: [
+      'RoRo capacity for cars, trucks, and heavy equipment',
+      'Break-bulk stowage for oversized and project cargo',
+      'Lift plans, lashing, and port handling coordination',
+      'Route surveys and permits for out-of-gauge moves',
+    ],
+  },
+  {
     icon: Ship,
     title: 'Ocean Freight (FCL & LCL)',
     image: 'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=1400&q=80&auto=format&fit=crop',
@@ -43,20 +57,6 @@ const services = [
       'Cross-border customs coordination',
       'Refrigerated and specialized equipment',
       'Real-time milestone updates',
-    ],
-  },
-  {
-    icon: Boxes,
-    title: 'Project Logistics (RoRo / Break Bulk)',
-    image: 'https://images.unsplash.com/photo-1759354017705-8bd86407ca5e?w=1400&q=80&auto=format&fit=crop',
-    imageAlt: 'Roll-on/roll-off ship sailing on the ocean',
-    description:
-      'Oversized, wheeled, and out-of-gauge cargo handled end-to-end — from roll-on/roll-off vessels for vehicles and machinery to break-bulk stowage for project shipments that don’t fit a box.',
-    features: [
-      'RoRo capacity for cars, trucks, and heavy equipment',
-      'Break-bulk stowage for oversized and project cargo',
-      'Lift plans, lashing, and port handling coordination',
-      'Route surveys and permits for out-of-gauge moves',
     ],
   },
 ];
