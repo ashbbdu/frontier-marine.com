@@ -37,8 +37,9 @@ export default function About() {
               is a promise.
             </p>
             <p>
-              Today, we handle ocean, air, and land freight for growing brands, established manufacturers,
-              and everyone in between — with the same attention we gave our very first customer.
+              Today, we handle ocean, air, land, and project logistics — from FCL and LCL sea freight to
+              RoRo vessels and break-bulk stowage for oversized cargo — serving growing brands, established
+              manufacturers, and everyone in between with the same attention we gave our very first customer.
             </p>
           </div>
         </div>
