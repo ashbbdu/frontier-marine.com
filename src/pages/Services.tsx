@@ -1,20 +1,34 @@
-import { Ship, Plane, Truck, Boxes, Check, MessageCircle } from 'lucide-react';
+import { Ship, Plane, Truck, Container, Wrench, Check, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { whatsappHref } from '../config/site';
 
 const services = [
   {
-    icon: Boxes,
-    title: 'Project Logistics (RoRo / Break Bulk)',
+    icon: Container,
+    title: 'Specialized Cargo (RoRo & Breakbulk)',
     image: '/service-project-logistics.jpg',
-    imageAlt: 'Heavy oilfield equipment on trailers staged for shipment',
+    imageAlt: 'Heavy vehicles and machinery staged at port for RoRo shipment',
     description:
-      'Oversized, wheeled, and out-of-gauge cargo handled end-to-end — from roll-on/roll-off vessels for vehicles and machinery to break-bulk stowage for project shipments that don’t fit a box.',
+      'Roll-on/roll-off and break-bulk services for wheeled cargo, heavy equipment, and shipments that don\'t fit a container. From vehicles and buses to construction machinery and prefabricated units — planned, stowed, and delivered with the right handling at every port.',
     features: [
-      'RoRo capacity for cars, trucks, and heavy equipment',
-      'Break-bulk stowage for oversized and project cargo',
-      'Lift plans, lashing, and port handling coordination',
-      'Route surveys and permits for out-of-gauge moves',
+      'RoRo capacity for cars, trucks, buses and heavy equipment',
+      'Break-bulk stowage for oversized and irregular cargo',
+      'Lashing, dunnage and port-handling coordination',
+      'Documentation for used vehicles and machinery exports',
+    ],
+  },
+  {
+    icon: Wrench,
+    title: 'Project Cargo (OOG & IG)',
+    image: 'https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=1400&q=80&auto=format&fit=crop',
+    imageAlt: 'Large industrial project cargo being lifted at port',
+    description:
+      'Out-of-gauge and in-gauge project moves for industrial, energy, and infrastructure shipments. We manage route surveys, permits, lift plans and multi-modal coordination so complex cargo arrives on schedule and on plan.',
+    features: [
+      'OOG flat-rack and open-top solutions',
+      'IG project cargo consolidations',
+      'Route surveys, permits and lift-plan coordination',
+      'Multi-modal execution across sea, road and air',
     ],
   },
   {
@@ -47,13 +61,13 @@ const services = [
   },
   {
     icon: Truck,
-    title: 'Land & Road Transport',
+    title: 'Land Transport',
     image: 'https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62?w=1400&q=80&auto=format&fit=crop',
     imageAlt: 'Freight truck on a highway',
     description:
-      'Cross-border trucking and last-mile delivery across major trade corridors, integrated cleanly with your ocean and air legs.',
+      'Cross-border trucking and last-mile delivery across major GCC trade corridors, integrated cleanly with your ocean and air legs.',
     features: [
-      'FTL and LTL road freight',
+      'FTL and LTL road freight across the GCC',
       'Cross-border customs coordination',
       'Refrigerated and specialized equipment',
       'Real-time milestone updates',
@@ -68,9 +82,9 @@ export default function Services() {
         <div className="mx-auto max-w-7xl px-4 py-20 md:px-6 md:py-28">
           <div className="max-w-3xl">
             <div className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-brand-light">Services</div>
-            <h1 className="text-4xl md:text-5xl font-extrabold">Four service lines. One accountable team.</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold">Five service lines. One accountable team.</h1>
             <p className="mt-5 text-lg text-white/80">
-              Ocean, air, land, and customs — coordinated end-to-end so your shipment has one owner from
+              Specialized cargo, project moves, ocean, air and land — coordinated end-to-end so your shipment has one owner from
               origin to destination.
             </p>
           </div>
@@ -81,20 +95,20 @@ export default function Services() {
         {services.map((s, i) => (
           <div key={s.title} className={`grid gap-10 md:grid-cols-2 items-center ${i % 2 ? 'md:[&>*:first-child]:order-2' : ''}`}>
             <div>
-              <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-navy/10 text-brand-navy dark:bg-brand-royal/20 dark:text-brand-light">
+              <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-navy/10 text-brand-navy">
                 <s.icon size={26} />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-brand-navy dark:text-white">{s.title}</h2>
-              <p className="mt-3 text-slate-600 dark:text-slate-300">{s.description}</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-brand-navy">{s.title}</h2>
+              <p className="mt-3 text-slate-600">{s.description}</p>
               <ul className="mt-5 space-y-2">
                 {s.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
+                  <li key={f} className="flex items-start gap-2 text-sm text-slate-700">
                     <Check size={18} className="mt-0.5 text-brand-royal" /> {f}
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="overflow-hidden rounded-3xl border border-slate-200 shadow-sm dark:border-slate-800 aspect-video">
+            <div className="overflow-hidden rounded-3xl border border-slate-200 shadow-sm aspect-video">
               <img
                 src={s.image}
                 alt={s.imageAlt}
@@ -111,11 +125,20 @@ export default function Services() {
           <div className="text-center max-w-3xl mx-auto">
             <div className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-brand-light">Let's talk</div>
             <h2 className="text-3xl md:text-4xl font-bold">Not sure which service you need?</h2>
-            <p className="mt-4 text-base md:text-lg text-white/80">Send us the shipment details — we'll recommend the right mode and get you a quote.</p>
+            <p className="mt-4 text-base md:text-lg text-white/80">
+              Send us your shipment details — we'll recommend the right solution and get you a quote.
+            </p>
           </div>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link to="/contact" className="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-brand-navy hover:bg-brand-light transition">Contact us</Link>
-            <a href={whatsappHref()} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white/30 px-5 py-3 text-sm font-semibold hover:bg-white/10 transition inline-flex items-center gap-2">
+            <Link to="/contact" className="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-brand-navy hover:bg-brand-light transition">
+              Get a quote
+            </Link>
+            <a
+              href={whatsappHref()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-whatsapp px-5 py-3 text-sm font-semibold text-white transition hover:brightness-110 inline-flex items-center gap-2"
+            >
               <MessageCircle size={16} /> WhatsApp
             </a>
           </div>
