@@ -10,7 +10,7 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Frontier Maritime turned our monthly FCL shipments from Jebel Ali into the least stressful line item on my calendar. Documentation is always ahead of schedule, and I actually get a human on the phone.",
+      "SeaFargo turned our monthly FCL shipments from Jebel Ali into the least stressful line item on my calendar. Documentation is always ahead of schedule, and I actually get a human on the phone.",
     name: 'Ayesha Rahman',
     role: 'Supply Chain Lead',
     company: 'Meridian Home Goods',
@@ -24,7 +24,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Straightforward pricing, no surprise fees, and their brokerage team knows UAE customs cold. We moved four suppliers over to Frontier in the first quarter — that's the highest compliment I can give.",
+      "Straightforward pricing, no surprise fees, and their brokerage team knows UAE customs cold. We moved four suppliers over to SeaFargo in the first quarter — that's the highest compliment I can give.",
     name: 'Sarah Al Mansoori',
     role: 'Founder',
     company: 'Souq Provisions',
@@ -38,7 +38,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "As a fashion importer, our SKUs come from a dozen origins on tight windows. Frontier consolidates it all beautifully and their LCL rates keep our unit economics honest.",
+      "As a fashion importer, our SKUs come from a dozen origins on tight windows. SeaFargo consolidates it all beautifully and their LCL rates keep our unit economics honest.",
     name: 'Anna Kovacs',
     role: 'Head of Buying',
     company: 'Kite & Co. Apparel',
@@ -52,7 +52,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Bulk construction materials into Abu Dhabi used to be a paperwork nightmare. Frontier's brokerage and bonded warehousing turned it into something I barely think about now.",
+      "Bulk construction materials into Abu Dhabi used to be a paperwork nightmare. SeaFargo's brokerage and bonded warehousing turned it into something I barely think about now.",
     name: 'Mohammed Al-Farsi',
     role: 'Procurement Manager',
     company: 'Al Waha Construction',

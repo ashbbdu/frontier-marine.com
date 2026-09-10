@@ -5,6 +5,7 @@ import { site, whatsappHref } from '../config/site';
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [error, setError] = useState<string | null>(null);
 
@@ -20,7 +21,8 @@ export default function Contact() {
     }
     setError(null);
     const subject = encodeURIComponent(`Website enquiry from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    const phoneLine = phone.trim() ? `Phone: ${phone}\n` : '';
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n${phoneLine}\n${message}`);
     window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
   };
 
@@ -87,6 +89,17 @@ export default function Contact() {
                 />
               </label>
             </div>
+
+            <label className="block">
+              <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Phone <span className="text-slate-400 font-normal">(optional)</span></span>
+              <input
+                type="tel"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                className="mt-1 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-brand-royal focus:ring-2 focus:ring-brand-royal/30 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
+                placeholder="+971 5X XXX XXXX"
+              />
+            </label>
 
             <label className="block">
               <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Message</span>
