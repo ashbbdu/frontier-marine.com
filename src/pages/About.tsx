@@ -76,12 +76,12 @@ export default function About() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-20 md:px-6">
+      {/* <section className="mx-auto max-w-7xl px-4 py-20 md:px-6">
         <SectionHeading kicker="What clients say" title="Shipping teams that trust us with their cargo" subtitle="Real feedback from importers, exporters, and manufacturers across the GCC and beyond." />
         <div className="mt-12">
           <TestimonialsMarquee />
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
