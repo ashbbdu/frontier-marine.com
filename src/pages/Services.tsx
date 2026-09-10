@@ -20,7 +20,7 @@ const services = [
   {
     icon: Wrench,
     title: 'Project Cargo (OOG & IG)',
-    image: 'https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=1400&q=80&auto=format&fit=crop',
+    image: '/service-project-cargo.png',
     imageAlt: 'Large industrial project cargo being lifted at port',
     description:
       'Out-of-gauge and in-gauge project moves for industrial, energy, and infrastructure shipments. We manage route surveys, permits, lift plans and multi-modal coordination so complex cargo arrives on schedule and on plan.',
@@ -34,7 +34,7 @@ const services = [
   {
     icon: Ship,
     title: 'Ocean Freight (FCL & LCL)',
-    image: 'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=1400&q=80&auto=format&fit=crop',
+    image: '/service-ocean-freight.jpg',
     imageAlt: 'Container ship at sea loaded with stacks of shipping containers',
     description:
       'Full-container and less-than-container sea shipping to more than 200 ports worldwide, backed by vetted carrier partnerships and door-to-door coordination.',
@@ -48,7 +48,7 @@ const services = [
   {
     icon: Plane,
     title: 'Air Freight',
-    image: 'https://images.unsplash.com/photo-1571086291540-b137111fa1c7?w=1400&q=80&auto=format&fit=crop',
+    image: '/service-air-freight.jpg',
     imageAlt: 'Cargo aircraft at an international airport',
     description:
       'Express and standard air cargo when time is the priority — with capacity across leading carriers and cutoffs designed around your production calendar.',
@@ -62,7 +62,7 @@ const services = [
   {
     icon: Truck,
     title: 'Land Transport',
-    image: 'https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62?w=1400&q=80&auto=format&fit=crop',
+    image: '/service-land-transport.jpg',
     imageAlt: 'Freight truck on a highway',
     description:
       'Cross-border trucking and last-mile delivery across major GCC trade corridors, integrated cleanly with your ocean and air legs.',

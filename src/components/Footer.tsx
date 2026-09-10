@@ -11,7 +11,7 @@ export default function Footer() {
             <img
               src="/logo.png"
               alt={`${site.name} — ${site.tagline}`}
-              className="h-10 w-auto dark:brightness-0 dark:invert"
+              className="h-12 w-auto"
             />
           </div>
           <p className="text-sm text-slate-600 dark:text-slate-400">

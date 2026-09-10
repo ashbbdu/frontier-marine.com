@@ -11,11 +11,11 @@ import Faq from '../components/Faq';
 import { site, whatsappHref } from '../config/site';
 
 const heroImages = [
-  'https://images.unsplash.com/photo-1606185540834-d6e7483ee1a4?w=1920&q=80&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=1920&q=80&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1670121180530-cfcba4438038?w=1920&q=80&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1605732562742-3023a888e56e?w=1920&q=80&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1493946740644-2d8a1f1a6aff?w=1920&q=80&auto=format&fit=crop',
+  '/hero-1.jpg',
+  '/service-ocean-freight.jpg',
+  '/hero-3.jpg',
+  '/hero-4.jpg',
+  '/hero-5.jpg',
 ];
 
 const services = [

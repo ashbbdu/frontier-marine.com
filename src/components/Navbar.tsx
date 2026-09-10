@@ -27,12 +27,12 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/80 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
-          <Link to="/" className="flex items-center" onClick={() => setOpen(false)} aria-label={`${site.name} home`}>
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:h-20 md:px-6">
+          <Link to="/" className="flex h-full items-center" onClick={() => setOpen(false)} aria-label={`${site.name} home`}>
             <img
               src="/logo.png"
               alt={`${site.name} — ${site.tagline}`}
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
@@ -109,7 +109,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt={`${site.name} — ${site.tagline}`}
-            className="h-10 w-auto"
+            className="h-12 w-auto"
           />
           <button
             type="button"
