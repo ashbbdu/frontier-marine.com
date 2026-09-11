@@ -1,6 +1,6 @@
 import { Compass, HeartHandshake, Sparkles } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
-import TestimonialsMarquee from '../components/TestimonialsMarquee';
+// import TestimonialsMarquee from '../components/TestimonialsMarquee';
 import { site } from '../config/site';
 
 const values = [
