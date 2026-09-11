@@ -6,7 +6,7 @@ export const site = {
   whatsappNumber: '971567614169',
   whatsappDefaultMessage:
     "Hi SeaFargo, I'd like to know more about your freight forwarding services.",
-  email: 'Joshua@frontier-marine.com',
+  email: 'operations@seafargo.com',
   phone: '+971 56 761 4169',
   address: 'Jebel Ali Free Zone, Dubai, United Arab Emirates',
   social: {
