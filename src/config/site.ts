@@ -3,11 +3,11 @@ export const site = {
   shortName: 'SeaFargo',
   tagline: 'Global Reach. Personal Commitment.',
   city: 'Dubai, UAE',
-  whatsappNumber: '971567614169',
+  whatsappNumber: '971500000000',
   whatsappDefaultMessage:
     "Hi SeaFargo, I'd like to know more about your freight forwarding services.",
   email: 'operations@seafargo.com',
-  phone: '+971 56 761 4169',
+  phone: '+971 50 000 0000',
   address: 'Jebel Ali Free Zone, Dubai, United Arab Emirates',
   social: {
     linkedin: '#',
