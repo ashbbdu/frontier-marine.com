@@ -127,8 +127,8 @@ export default function Contact() {
       <section className="mx-auto max-w-7xl px-4 pb-20 md:px-6">
         <div className="overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800">
           <iframe
-            title="Office location — Jebel Ali, Dubai"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=55.04%2C24.98%2C55.13%2C25.03&layer=mapnik&marker=25.0075,55.088"
+            title="Office location — IFZA Business Park, Dubai Silicon Oasis"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=55.37%2C25.11%2C55.42%2C25.14&layer=mapnik&marker=25.1279,55.3914"
             className="h-80 w-full"
             loading="lazy"
           />
